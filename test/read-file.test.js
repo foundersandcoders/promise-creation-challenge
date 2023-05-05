@@ -27,6 +27,11 @@ test("readFilePromise returns a promise that resolves with file contents", async
 test("readFilePromise rejects if an error occurs", async () => {
   const result = readFilePromise("notReal.psd");
 
+  assert.ok(
+    result instanceof Promise,
+    "readFilePromise should return a promise"
+  );
+
   try {
     await result;
     assert.fail("Nonexistent file should cause readFilePromise to reject");
