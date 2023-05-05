@@ -1,13 +1,13 @@
 {
   "scripts": {
-    "test:1": "node --no-warnings test/wait.test.js",
-    "test:2": "node --no-warnings test/read-file.test.js"
+    "test:1": "node test/wait.test.js",
+    "test:2": "node test/read-file.test.js"
   },
   "devDependencies": {
     "eslint": "^8.24.0"
   },
   "volta": {
-    "node": "18.10.0"
+    "node": "18.16.0"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
