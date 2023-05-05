@@ -37,6 +37,17 @@ doSomethingAsync()
   .catch((error) => console.error(error));
 ```
 
+## Setup
+
+Make sure you have Git and Node (v18) installed.
+
+1. [Use this template](https://github.com/foundersandcoders/promise-creation-challenge/generate), clone your copy, cd into it
+1. Run `npm install` to install all the dependencies
+
+## Checking your work
+
+Each challenge has associated unit tests. You can either run all the tests with `npm test`, or each individual challenge's tests with `npm run test:1`, `npm run test:2` etc.
+
 ## Challenge one
 
 You're going to create a promisified version of `setTimeout`, called `wait`. It should take a number of millliseconds to wait as an argument, set a timeout for that long, then resolve the promise.
